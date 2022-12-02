@@ -21,7 +21,7 @@
 #include <boost/test/included/unit_test.hpp>
 BOOST_AUTO_TEST_CASE( MessageQueueTest )
 {
-  using namespace BackgroundLogger;
+  using namespace Salvo;
   struct NODE {
     char data[256];
     int i;

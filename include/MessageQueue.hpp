@@ -29,7 +29,7 @@
 #include <string.h>
 
 class MessageQueueTest;
-namespace BackgroundLogger {
+namespace Salvo {
 
 #if __cplusplus > 199711L
 #define _MQCONSTEXPR constexpr
@@ -276,7 +276,7 @@ namespace BackgroundLogger {
       return LockedMessageQueueWriteHandle(this);
     }
 
-} // namespace BackgroundLogger
+} // namespace Salvo
 #endif
 
 

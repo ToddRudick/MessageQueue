@@ -4,7 +4,7 @@ CPPFLAGS=-O3 -Wall -std=c++11 -Werror -MMD -MP -mtune=native -ffast-math -funsaf
 LDFLAGS=-lboost_unit_test_framework
 BUILDDIR=$(CURDIR)/build
 
-TESTS=$(foreach f,MessageQueueTest,tests/$(f))
+TESTS=$(foreach f,MessageQueueTest ShmemMessageQueueTest,tests/$(f))
 all: $(TESTS)
 
 $(BUILDDIR)/%.o: src/%.cpp
