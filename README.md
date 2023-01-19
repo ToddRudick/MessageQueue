@@ -31,4 +31,4 @@ To use in-process:
   
 ```    
     
-
+To use an an IPC mechanism simply create the MessageQueue object pointer with ShmemMessageQueue::create
