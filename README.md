@@ -1,10 +1,12 @@
 # MessageQueue
 
 Header only C++11 library for fast in-process or shared-memory Message queues. Assumption is that a reader will copy or process data faster than the
-writer can loop. For very high-capacity producer/consumers, readers should occasionally check for falling behind & skip/drop to catch up (which in practice
-doesn't happen in prod code if queues are big enough, but still could happen in testing / debugging / etc environments)
+writer can loop. For very high-capacity producer/consumers, readers should occasionally check for falling behind & skip/drop to catch up (which in practice doesn't happen in prod code if queues are big enough, but still could happen in testing / debugging / etc environments)
 
 To use in-process:
+
+```
+
   using namespace Salvo;
   struct NODE {
     char data[256];
@@ -26,7 +28,7 @@ To use in-process:
       // used immediately
     }
   }
-
-    
+  
+```    
     
 
